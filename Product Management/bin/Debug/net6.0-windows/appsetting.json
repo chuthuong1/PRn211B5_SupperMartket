@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DBSupermarket": "Server=DESKTOP-IRP03E2\\THUONG;uid=sa;pwd=123;database=DBSupermarket"
+  }
+}
