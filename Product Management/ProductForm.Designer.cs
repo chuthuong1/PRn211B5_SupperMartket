@@ -48,6 +48,8 @@
             label7 = new Label();
             txtSearch = new TextBox();
             dataGridView1 = new DataGridView();
+            btnCleatData = new Button();
+            btnorder = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -86,7 +88,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(1027, 80);
+            label3.Location = new Point(930, 74);
             label3.Name = "label3";
             label3.Size = new Size(84, 25);
             label3.TabIndex = 4;
@@ -119,7 +121,7 @@
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(1153, 153);
+            txtQuantity.Location = new Point(1031, 150);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(150, 31);
             txtQuantity.TabIndex = 8;
@@ -141,15 +143,15 @@
             // txtCategory
             // 
             txtCategory.FormattingEnabled = true;
-            txtCategory.Location = new Point(1153, 77);
+            txtCategory.Location = new Point(1031, 74);
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(182, 33);
+            txtCategory.Size = new Size(388, 33);
             txtCategory.TabIndex = 11;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(1027, 156);
+            label6.Location = new Point(930, 150);
             label6.Name = "label6";
             label6.Size = new Size(80, 25);
             label6.TabIndex = 12;
@@ -200,6 +202,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(567, 31);
             txtSearch.TabIndex = 17;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // dataGridView1
             // 
@@ -210,12 +213,35 @@
             dataGridView1.RowTemplate.Height = 33;
             dataGridView1.Size = new Size(1717, 485);
             dataGridView1.TabIndex = 18;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+            // 
+            // btnCleatData
+            // 
+            btnCleatData.Location = new Point(1447, 223);
+            btnCleatData.Name = "btnCleatData";
+            btnCleatData.Size = new Size(112, 34);
+            btnCleatData.TabIndex = 19;
+            btnCleatData.Text = "clearData";
+            btnCleatData.UseVisualStyleBackColor = true;
+            btnCleatData.Click += btnCleatData_Click;
+            // 
+            // btnorder
+            // 
+            btnorder.Location = new Point(1603, 145);
+            btnorder.Name = "btnorder";
+            btnorder.Size = new Size(112, 34);
+            btnorder.TabIndex = 20;
+            btnorder.Text = "Order";
+            btnorder.UseVisualStyleBackColor = true;
+            btnorder.Click += btnorder_Click;
             // 
             // ProductForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1854, 827);
+            Controls.Add(btnorder);
+            Controls.Add(btnCleatData);
             Controls.Add(dataGridView1);
             Controls.Add(txtSearch);
             Controls.Add(label7);
@@ -263,5 +289,7 @@
         private Label label7;
         private TextBox txtSearch;
         private DataGridView dataGridView1;
+        private Button btnCleatData;
+        private Button btnorder;
     }
 }

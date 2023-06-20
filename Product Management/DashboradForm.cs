@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using Product_Management.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,36 @@ namespace Product_Management
             dataGridView1.Tag = cform;
             cform.BringToFront();
             cform.Show();
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            opeForm(new CategoryForm());
+        }
+
+        private void btnSupplaier_Click(object sender, EventArgs e)
+        {
+            opeForm(new Supplaier());
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            opeForm(new EmployeeForm());
+        }
+
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            opeForm(new InvoiceForm());
+        }
+
+        private void btnTransactionDetails_Click(object sender, EventArgs e)
+        {
+            opeForm(new Transaction());
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            opeForm(new UserrForm());
         }
     }
 }

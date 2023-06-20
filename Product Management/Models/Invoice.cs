@@ -14,11 +14,12 @@ namespace Product_Management.Models
         public int? CustomerId { get; set; }
         public int? EmployeeId { get; set; }
         public DateTime? Date { get; set; }
-        public decimal? TotalAmount { get; set; }
+        public int? TotalAmount { get; set; }
 
         public virtual Customer? Customer { get; set; }
         public virtual Employee? Employee { get; set; }
         public virtual Profit? Profit { get; set; }
         public virtual ICollection<TransactionDetail> TransactionDetails { get; set; }
+
     }
 }

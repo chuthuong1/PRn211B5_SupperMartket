@@ -10,7 +10,7 @@ namespace Product_Management.Models
         public int? SupplierId { get; set; }
         public DateTime? Date { get; set; }
         public int? Quantity { get; set; }
-        public decimal? UnitPrice { get; set; }
+        public int? UnitPrice { get; set; }
 
         public virtual Product? Product { get; set; }
         public virtual Supplier? Supplier { get; set; }

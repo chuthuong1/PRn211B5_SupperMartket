@@ -57,3 +57,12 @@ E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\ref\Product M
 E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.DashboradForm.resources
 E:\PRN211\SupperMarket\Product Management\bin\Debug\net6.0-windows\appsetting.json
 E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.ProductForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.CategoryForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.EmployeeForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.Supplaier.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.Transaction.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.InvoiceForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.LossForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.ProfitForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.UserrForm.resources
+E:\PRN211\SupperMarket\Product Management\obj\Debug\net6.0-windows\Product_Management.AddOrder.resources

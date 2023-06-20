@@ -13,7 +13,7 @@ namespace Product_Management
 {
     public partial class LoginForm : Form
     {
-        DBSupermarketContext db = new DBSupermarketContext();
+        DBSupermarket2Context db = new DBSupermarket2Context();
 
         public LoginForm()
         {
@@ -72,5 +72,34 @@ namespace Product_Management
             }
         }
 
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            int count = 0;
+            var data = (from a in db.Userrs
+                        select new
+                        {
+                            a.Username,
+                            a.Password,
+                            a.Email
+                        }).ToList();
+
+            foreach (var item in data)
+            {
+                if (txtUsername.Text.Equals(item.Username) && txtpassword.Text.Equals(item.Password))
+                {
+                    DashboradForm dashboradForm = new DashboradForm();
+                    MessageBox.Show("Chuc mot ngay tot lanh" + item.Username);
+                    dashboradForm.Show();
+                    this.Hide();
+
+                    count++;
+                }
+            }
+
+            if (count == 0)
+            {
+                MessageBox.Show("Sai tai khoan hoac mat khau");
+            }
+        }
     }
 }

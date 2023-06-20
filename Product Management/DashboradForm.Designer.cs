@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnUser = new Button();
+            btnInvoice = new Button();
+            btnEmployee = new Button();
+            btnSupplaier = new Button();
+            btnCategory = new Button();
             btnProduct = new Button();
             dataGridView1 = new DataGridView();
-            btnCategory = new Button();
-            btnSupplaier = new Button();
-            btnEmployee = new Button();
-            btnTransactionDetails = new Button();
-            btnInvoice = new Button();
-            button7 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(button7);
+            panel1.Controls.Add(btnUser);
             panel1.Controls.Add(btnInvoice);
-            panel1.Controls.Add(btnTransactionDetails);
             panel1.Controls.Add(btnEmployee);
             panel1.Controls.Add(btnSupplaier);
             panel1.Controls.Add(btnCategory);
@@ -54,6 +52,57 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(224, 925);
             panel1.TabIndex = 0;
+            // 
+            // btnUser
+            // 
+            btnUser.Location = new Point(35, 458);
+            btnUser.Name = "btnUser";
+            btnUser.Size = new Size(112, 34);
+            btnUser.TabIndex = 6;
+            btnUser.Text = "User";
+            btnUser.UseVisualStyleBackColor = true;
+            btnUser.Click += btnUser_Click;
+            // 
+            // btnInvoice
+            // 
+            btnInvoice.Location = new Point(35, 381);
+            btnInvoice.Name = "btnInvoice";
+            btnInvoice.Size = new Size(112, 34);
+            btnInvoice.TabIndex = 4;
+            btnInvoice.Text = "Invoice";
+            btnInvoice.UseVisualStyleBackColor = true;
+            btnInvoice.Click += btnInvoice_Click;
+            // 
+            // btnEmployee
+            // 
+            btnEmployee.Location = new Point(35, 294);
+            btnEmployee.Name = "btnEmployee";
+            btnEmployee.Size = new Size(112, 34);
+            btnEmployee.TabIndex = 3;
+            btnEmployee.Text = "Employee";
+            btnEmployee.UseVisualStyleBackColor = true;
+            btnEmployee.Click += btnEmployee_Click;
+            // 
+            // btnSupplaier
+            // 
+            btnSupplaier.Location = new Point(35, 212);
+            btnSupplaier.Name = "btnSupplaier";
+            btnSupplaier.Size = new Size(112, 34);
+            btnSupplaier.TabIndex = 2;
+            btnSupplaier.Text = "Supplaier";
+            btnSupplaier.UseVisualStyleBackColor = true;
+            btnSupplaier.Click += btnSupplaier_Click;
+            // 
+            // btnCategory
+            // 
+            btnCategory.Location = new Point(35, 125);
+            btnCategory.Name = "btnCategory";
+            btnCategory.Size = new Size(112, 34);
+            btnCategory.TabIndex = 1;
+            btnCategory.Text = "Category";
+            btnCategory.TextAlign = ContentAlignment.TopCenter;
+            btnCategory.UseVisualStyleBackColor = true;
+            btnCategory.Click += btnCategory_Click;
             // 
             // btnProduct
             // 
@@ -75,61 +124,6 @@
             dataGridView1.Size = new Size(1704, 832);
             dataGridView1.TabIndex = 1;
             // 
-            // btnCategory
-            // 
-            btnCategory.Location = new Point(35, 125);
-            btnCategory.Name = "btnCategory";
-            btnCategory.Size = new Size(112, 34);
-            btnCategory.TabIndex = 1;
-            btnCategory.Text = "Category";
-            btnCategory.TextAlign = ContentAlignment.TopCenter;
-            btnCategory.UseVisualStyleBackColor = true;
-            // 
-            // btnSupplaier
-            // 
-            btnSupplaier.Location = new Point(35, 212);
-            btnSupplaier.Name = "btnSupplaier";
-            btnSupplaier.Size = new Size(112, 34);
-            btnSupplaier.TabIndex = 2;
-            btnSupplaier.Text = "Supplaier";
-            btnSupplaier.UseVisualStyleBackColor = true;
-            // 
-            // btnEmployee
-            // 
-            btnEmployee.Location = new Point(35, 294);
-            btnEmployee.Name = "btnEmployee";
-            btnEmployee.Size = new Size(112, 34);
-            btnEmployee.TabIndex = 3;
-            btnEmployee.Text = "Employee";
-            btnEmployee.UseVisualStyleBackColor = true;
-            // 
-            // btnTransactionDetails
-            // 
-            btnTransactionDetails.Location = new Point(35, 467);
-            btnTransactionDetails.Name = "btnTransactionDetails";
-            btnTransactionDetails.Size = new Size(112, 34);
-            btnTransactionDetails.TabIndex = 4;
-            btnTransactionDetails.Text = "TransactionDetails";
-            btnTransactionDetails.UseVisualStyleBackColor = true;
-            // 
-            // btnInvoice
-            // 
-            btnInvoice.Location = new Point(35, 381);
-            btnInvoice.Name = "btnInvoice";
-            btnInvoice.Size = new Size(112, 34);
-            btnInvoice.TabIndex = 4;
-            btnInvoice.Text = "Invoice";
-            btnInvoice.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(35, 537);
-            button7.Name = "button7";
-            button7.Size = new Size(112, 34);
-            button7.TabIndex = 5;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
-            // 
             // DashboradForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -147,13 +141,12 @@
         #endregion
 
         private Panel panel1;
-        private Button button7;
         private Button btnInvoice;
-        private Button btnTransactionDetails;
         private Button btnEmployee;
         private Button btnSupplaier;
         private Button btnCategory;
         private Button btnProduct;
         private DataGridView dataGridView1;
+        private Button btnUser;
     }
 }
